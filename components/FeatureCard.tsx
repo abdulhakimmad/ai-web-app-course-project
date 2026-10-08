@@ -1,15 +1,13 @@
 type FeatureCardProps = {
-    title: string;
-    description: string;
+  title: string;
+  description: string;
 };
-export function FeatureCard({
-    title,
-    description
-}: FeatureCardProps) {
-    return (
-        <section>
-            <h2>{title}</h2>
-            <p>{description}</p>
-        </section>
-    );
+
+export function FeatureCard({ title, description }: FeatureCardProps) {
+  return (
+    <div className="ux-card">
+      <h3>{title}</h3>
+      <p className="ux-muted">{description}</p>
+    </div>
+  );
 }
